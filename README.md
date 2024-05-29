@@ -2,10 +2,10 @@
 
 > CLI Target: 让我们的操作变得更高效、更规范！
 
-# 功能
+# 特性
 
-1. 介绍面板`mycli`
-1. 创建项目`mycli create <projectName>`
+1. 获取帮助信息指令`mycli || mycli -h`
+2. 创建项目指令`mycli create <projectName>`
 
 # 步骤
 
@@ -26,7 +26,7 @@
    ```
    - 执行 `npm link` 命令，将 `mycli` 链接到全局环境中，这样我们就可以在任何地方使用 `mycli` 命令了
    - 测试命令：`npx which mycli`
-1. 实现用户与终端交互:
+2. 实现用户与终端交互:
 
    - `npm i commander -S` 专门处理参数解析
    - `npm i inquirer -S` 提供交互输入方式`如下拉框、输入框等`
@@ -61,7 +61,7 @@
     program.parse();
    ```
 
-1. 实现模板下载功能
+3. 实现模板下载功能
 
    - 安装`npm i shelljs` 用于帮助我们执行终端命令
    - 安装`npm i ora` 用于帮助我们展示加载动画
